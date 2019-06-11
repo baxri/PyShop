@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <strong>Products</strong>
+
+    <ul>
+        {% for product in products %}
+        <li>{{product.name}} (${{product.price}})</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
